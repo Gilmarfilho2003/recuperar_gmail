@@ -10,13 +10,13 @@ print('''
 	|            brute force gmail           |
 	|----------------------------------------|
 	|                                        |
-  |              Por Gilmar Filho          |
+        |              Por Gilmar Filho          |
 	|                                        |
-  |                                        |
+        |                                        |
 	|----------------------------------------|
 	''')
 
-user = input("Entre com o Gmail do alvo: ")
+user = input("Entre com o Gmail : ")
 min_digitos = (int(input("Entre a quantidade de caracteres minimos: ")))
 qnt_digitos = (int(input("Entre com a quantidade de caracteres maximos: ")))
 def print_perms(chars, minlen, maxlen): 
