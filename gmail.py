@@ -24,7 +24,7 @@ def print_perms(chars, minlen, maxlen):
         for perm in itertools.product(chars, repeat=n): 
             print(''.join(perm)) 
 
-print_perms("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890", min_digitos, qnt_digitos)
+print_perms("1234567890", min_digitos, qnt_digitos)
 
 for symbols in print_perms:
     try:
