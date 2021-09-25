@@ -1,8 +1,13 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import smtplib
+import threading
+from optparse import *
 import itertools 
 import smtplib
 
+
 smtp_srverG= smtplib.SMTP('smtp.gmail.com', 587)
-    smtp_srverG.ehlo()
     smtp_srverG.starttls()
 
 print('''
