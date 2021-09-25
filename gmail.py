@@ -7,8 +7,9 @@ import itertools
 import smtplib
 
 
-smtp_srverG= smtplib.SMTP('smtp.gmail.com', 587)
-    smtp_srverG.starttls()
+smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
+smtpserver.ehlo()
+smtpserver.starttls()
 
 print('''
 	==========================================
