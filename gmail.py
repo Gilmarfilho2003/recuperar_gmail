@@ -1,9 +1,9 @@
 import itertools 
 import smtplib
 
-smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
-smtpserver.ehlo()
-smtpserver.starttls()
+smtp_srverG= smtplib.SMTP('smtp.gmail.com', 587)
+    smtp_srverG.ehlo()
+    smtp_srverG.starttls()
 
 print('''
 	==========================================
